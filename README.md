@@ -7,7 +7,9 @@ This mod enables you to play radio stream in-game.
 - Upgrade stream player
 
 ##Credits
-Icon by [ipapun](http://ipapun.deviantart.com/). Which can be found [here](http://findicons.com/icon/158437/mic?id=372347)
+- Icon by [ipapun](http://ipapun.deviantart.com/). Which can be found [here](http://findicons.com/icon/158437/mic?id=372347)
+- [MetroFramework](http://thielj.github.io/MetroFramework)
+
 ##License
 The MIT License (MIT)
 
