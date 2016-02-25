@@ -24,10 +24,9 @@ namespace Radio_Exporter
         private void metroButton4_Click(object sender, EventArgs e)
         {
             string rxmPath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Colossal Order\Cities_Skylines\Addons\Mods\Radio";
-            if(Directory.Exists(rxmPath))
-                Process.Start(rxmPath);
-            else
-                MessageBox.Show("Error Mod folder doesn't exist on: " + rxmPath);
+            if(!Directory.Exists(rxmPath))
+                Directory.CreateDirectory(rxmPath);
+               Process.Start(rxmPath);
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
@@ -49,6 +48,9 @@ namespace Radio_Exporter
         public void downloadXML()
         {
             string rxmPath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Colossal Order\Cities_Skylines\Addons\Mods\Radio\radio.rxm";
+            string dir = Environment.GetEnvironmentVariable("LocalAppData") + @"\Colossal Order\Cities_Skylines\Addons\Mods\Radio\";
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
             if (File.Exists(rxmPath))
                 backupFile();
             string downUrl = "https://faisal-k.com/radio/radio.rxm";

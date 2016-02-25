@@ -2,9 +2,8 @@
 This mod enables you to play radio stream in-game.
 
 ##TODO
-- Make spotify .NET 3.5 compatible API
+- Make spotify & soundCloud .NET 3.5 compatible API
 - Add spotify to mod
-- Add UI controls within game
 
 ##Credits
 - Icon by [ipapun](http://ipapun.deviantart.com/). Which can be found [here](http://findicons.com/icon/158437/mic?id=372347)
